@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percy Tears - Now on cinema!</title>
-    <style>  
+    <style>
         /* centrerar texten */
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            width: min-content;
 
         }
 
@@ -20,8 +21,12 @@
         }
 
         /* Lite margins i sections  */
-        section {
-            margin: 5px 0;;
+        section,
+        article,
+        header {
+            margin: 5px 0;
+
+            text-align: center;
         }
 
         /* footer sakeer  */
@@ -29,15 +34,30 @@
             background-color: #0f0f0f;
             height: 50px;
             color: white;
-            margin:3px 0;
-            
-            
-            
+            margin: 3px 0;
+
+
         }
 
+        .cool_header {
+            color: #1ea353;
+            font-size: 1.6em;
+            text-shadow: 2px 2px 4px black;
+            text-transform: uppercase;
+        }
 
+        .link-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
 
-
+        .link-container a {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -45,18 +65,20 @@
 
     <header>
         <img src="https://shorturl.at/vtZjf" alt="header_img">
-    </header>
-    <header>
-        <h1>FS Production presents Percy Tears</h1>
+        <h1>FS Production presents, <span class="cool_header"> Percy Tears</span></h1>
         <h2>Now on cinema on all contents!</h2>
     </header>
 
     <section>
-        <h2>Title: Percy Tears</h2>
+        <h3> Percy Tears is a genius masterpiece divided in 6 episodes. </h3>
         <p><strong>Release date:</strong> 05 mars 2030</p>
         <p><strong>Regi:</strong> Walter Soderlund</p>
         <p><strong>Actors:</strong> Robert Gustafsson, Jonas Inde, Johan Rheborg</p>
-        <p><strong>Story:</strong> Percy Nilegaard has gone insane and goes to a shrink called Dr J. Tull. He tells the doctor the story of how he took over another man's life, Janne Fuglesang's. At the same time in Norrland, Kapten Klaenning is making his team of aeronauts ready to take a trip into space and put the first Swede on the moon.</p>
+        <p><strong>Story:</strong>
+            Percy Nilegaard has gone insane and goes to a shrink called Dr J. Tull. He
+            tells the doctor the story of how he took over another mans life, Janne Fuglesang's. At the same time in
+            Norrland, Kapten Klaenning is making his team of aeronauts ready to take a trip into space, and put the
+            first Swede on the moon.</p>
     </section>
 
     <section>
@@ -69,11 +91,12 @@
 
     <section>
         <h2>Links and information</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li><a href="https://www.imdb.com/title/tt0115314/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_percy%2520t%25C3%25A5r"
-                    target="_blank">IMDB</a></li>
-            <li><a href="https://www.svtplay.se/" target="_blank">SF Bio</a></li>
-        </ul>
+        <div class="link-container"> 
+            <a href="https://www.imdb.com/title/tt0115314/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_percy%2520t%25C3%25A5r"
+                target="_blank">IMDB</a>
+            <a href="https://www.svtplay.se/" target="_blank">PLAY</a>
+            <a href="https://sv.wikipedia.org/wiki/Percy_t%C3%A5rar/" target="_blank">WIKI</a>
+        </div>
     </section>
 
     <footer>
